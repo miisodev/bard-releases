@@ -1,5 +1,7 @@
 # Bard releases
 
-Signed Windows x64 installers and Tauri updater manifests for Bard are published here only after Authenticode verification.
+Windows x64 installers for [Bard](https://miiso.dev/tools/bard) — your clipboard, a sketchpad and offline dictation in one keyboard-first panel.
 
-The repository is intentionally empty of binaries until the first signed release passes the release gate. See https://miiso.dev/saas/bard for product information.
+Each release carries the installer, its Tauri updater signature (`.sig`), the updater manifest (`latest.json`), a software bill of materials, provenance, and `SHA256SUMS`. The installer is not Authenticode-signed; Bard verifies every update's signature against the key built into the app before installing it.
+
+Download the latest from [miiso.dev/tools/bard](https://miiso.dev/tools/bard) or the [latest release](https://github.com/miisodev/bard-releases/releases/latest). The source is private; this repository holds release files only.
